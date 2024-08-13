@@ -1,0 +1,135 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=SAMPLE  selection
+Name=SAMPLE_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=No
+SecurityOptions=F18A85DFFF44E9CD8B4836B3ABD467C0BE6657B9D9E81B907F73C0B095E98B03
+
+[Level]
+Label=SAMPLE selection questionnaire
+Name=SAMPLE_QUES
+
+[IdItems]
+
+[Item]
+Label=Cluster number
+Name=XCLUSTER
+Start=2
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Information on the EA
+Name=SAMPLE1
+RecordTypeValue='1'
+RecordLen=18
+
+[Item]
+Label=Total households in sample
+Name=XTOTAL
+Start=9
+Len=4
+DataType=Numeric
+
+[Item]
+Label=Supervisor code
+Name=XSUP
+Start=13
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=LGA
+Name=XLGA
+Start=17
+Len=1
+DataType=Numeric
+
+[Item]
+Label=AREA
+Name=XAREA
+Start=18
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Household selected
+Name=SAMPLE2
+RecordTypeValue='2'
+MaxRecords=100
+RecordLen=353
+
+[Item]
+Label=Sequential sampled number of household
+Name=XNUMBER
+Start=9
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Household number from the listing
+Name=XHHNUM
+Start=11
+Len=4
+DataType=Numeric
+
+[Item]
+Label=Name of household head
+Name=XNAME
+Start=15
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Size of household
+Name=XSIZE
+Start=65
+Len=3
+DataType=Numeric
+
+[Item]
+Label=Place of lodging
+Name=XLODGING
+Start=68
+Len=250
+DataType=Alpha
+
+[Item]
+Label=Interviewer assigned to household
+Name=XINTCODE
+Start=318
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Longitude
+Name=XLONGITUDE
+Start=321
+Len=12
+DataType=Numeric
+Decimal=6
+DecimalChar=Yes
+
+[Item]
+Label=Latitude
+Name=XLATITUDE
+Start=333
+Len=12
+DataType=Numeric
+Decimal=6
+DecimalChar=Yes
+
+[Item]
+Label=Phone number
+Name=XPHONE
+Start=345
+Len=9
+DataType=Numeric

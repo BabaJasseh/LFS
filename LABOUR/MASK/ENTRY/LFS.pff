@@ -1,0 +1,23 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+[DataEntryInit]
+OperatorID=Anyone
+ShowInApplicationListing = hidden
+StartMode=ADD;002110209
+Lock=ADD,Verify
+AutoAdd=No
+FullScreen=No
+NoFileOpen=Yes
+[Files]
+Application= ../ENTRY/LFS.pen
+InputData= ../DATA/M0140021102.csdb
+CommonStore=.\MySettings.db
+[ExternalFiles]
+[Parameters]
+cluster = 21102
+HHnumber = 09
+interviewer = 014
+LGA = 2
+AREA = 1
+SANNA = CSPRO MASTER

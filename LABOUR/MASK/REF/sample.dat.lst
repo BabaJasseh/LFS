@@ -1,0 +1,42 @@
+﻿Application     D:\2023\GAMBIA\LABOUR\MASK\ENTRY\SAMPLE.ent
+Type            ENTRY
+Input Data      <<Text File>> D:\2023\GAMBIA\LABOUR\MASK\REF\sample.dat
+External        FOLLOW_DICT=<<Text File>> D:\2023\GAMBIA\LABOUR\MASK\REF\follow.dat
+<File>          tempfile=
+
+Date            Dec 21, 2023
+Start Time      07:55:33
+End Time        07:56:30
+
+
+
+CSPro Executor Normal End
+------------------------------------------------------------------------------------------------------------------------
+Application     C:\Users\baba.j\Desktop\LABOUR 07082024\LABOUR\MASK\ENTRY\SAMPLE.ent
+Type            ENTRY
+Input Data      <<Text File>> C:\Users\baba.j\Desktop\LABOUR 07082024\LABOUR\MASK\REF\sample.dat
+External        FOLLOW_DICT=<<Text File>> C:\Users\baba.j\Desktop\LABOUR 07082024\LABOUR\MASK\REF\follow.dat
+<File>          tempfile=
+
+Date            Aug 09, 2024
+Start Time      15:11:51
+End Time        15:13:10
+
+
+
+CSPro Executor Normal End
+------------------------------------------------------------------------------------------------------------------------
+Application     C:\Users\baba.j\Desktop\LABOUR 07082024\LABOUR\MASK\ENTRY\SAMPLE.ent
+Type            ENTRY
+Input Data      <<Text File>> C:\Users\baba.j\Desktop\LABOUR 07082024\LABOUR\MASK\REF\sample.dat
+External        FOLLOW_DICT=<<Text File>> C:\Users\baba.j\Desktop\LABOUR 07082024\LABOUR\MASK\REF\follow.dat
+<File>          tempfile=
+
+Date            Aug 09, 2024
+Start Time      15:13:31
+End Time        15:13:41
+
+
+
+CSPro Executor Normal End
+------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,1528 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: LFS_DICT.HH1
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please enter the cluster number</p>
+  - name: LFS_DICT.HH2
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please enter the household number</p>
+  - name: LFS_DICT.HH7
+    conditions:
+      - questionText:
+          EN: |
+            Area<p></p>
+  - name: LFS_DICT.HH8
+    conditions:
+      - questionText:
+          EN: |
+            <p>Local Government Area (LGA)</p>
+  - name: LFS_DICT.HH3
+    conditions:
+      - questionText:
+          EN: |
+            <p>Interviewer</p>
+  - name: LFS_DICT.HH4
+    conditions:
+      - questionText:
+          EN: |
+            <p>Supervisor</p>
+  - name: LFS_DICT.HH6
+    conditions:
+      - questionText:
+          EN: |
+            <p>Date of interview</p>
+  - name: LFS_DICT.HH10
+    conditions:
+      - questionText:
+          EN: |
+            Hello, my name is (your name). I am from The Gambia Bureau of Statistics. We are conducting a survey about the labour force. The information we collect will help the government plan for employment. Your Household was selected for the survey. I would like to talk to you about this subject. This interview usually takes about 45 minutes. All the information we obtain will remain strictly confidential and anonymous. If you do not wish to answer a question or stop the interview, please let me know. May I start the interview now?
+  - name: LFS_DICT.HH9
+    conditions:
+      - questionText:
+          EN: |
+            <p>Start hour&nbsp;</p>
+  - name: LFS_DICT.XSTARTHH
+    conditions:
+      - questionText:
+          EN: |
+            <p>timestamp start HH</p>
+  - name: LFS_DICT.HH5A
+    conditions:
+      - questionText:
+          EN: |
+            <p>Name of household head</p>
+  - name: LFS_DICT.HH5B
+    conditions:
+      - logic: curocc()=1
+        questionText:
+          EN: |
+            <p>Household head's contact number</p>
+      - logic: curocc()=2
+        questionText:
+          EN: |
+            <p>Household head's second contact number</p><p></p><p><b>ENTER 0 IF THE HOUSEHOLD DOES NOT HAVE A SECOND CONTACT NUMBER</b></p><p><br></p><p></p>
+      - logic: curocc()=3
+        questionText:
+          EN: |
+            <p>Household head's third contact number</p><p></p><p><b>ENTER 0 IF THE&nbsp;</b><b>HOUSEHOLD&nbsp;</b><b>DOES NOT HAVE A THIRD CONTACT NUMBER</b></p><p></p>
+  - name: LFS_DICT.HL1
+    conditions:
+      - questionText:
+          EN: |
+            <p>Household line number</p>
+  - name: LFS_DICT.HL2
+    conditions:
+      - logic: curocc() = 1
+        questionText:
+          EN: |
+            <p><b><font color="#0000ff">HOUSEHOLD MEMBER ROSTER<br></font></b></p><p>Please state the names of all usual residents (and visitors of the household who have stayed here for 6 or more months), starting with the head of the household.&nbsp;<br></p><p>What is the name of the household head?</p><p><span class="instruction">Interviewer:&nbsp;Probe for additional household members</span></p>
+      - logic: curocc() > 1
+        questionText:
+          EN: |
+            Name of household member ~~curocc()~~<p></p>
+  - name: LFS_DICT.HL3
+    conditions:
+      - questionText:
+          EN: |
+            <p>What is the relationship of ~~HL2~~ to ~~HL2(1)~~?</p>
+  - name: LFS_DICT.HL4
+    conditions:
+      - questionText:
+          EN: |
+            <p>Is ~~HL2~~ male or female?</p>
+  - name: LFS_DICT.HHMORE
+    conditions:
+      - questionText:
+          EN: |
+            <p>Are there more household members?</p>
+  - name: LFS_DICT.HHSIZE
+    conditions:
+      - questionText:
+          EN: |
+            <p>Household size</p>
+  - name: LFS_DICT.HL5D
+    conditions:
+      - questionText:
+          EN: |
+            <p>~~HL2~~ 's Day of birth</p>
+  - name: LFS_DICT.HL5M
+    conditions:
+      - questionText:
+          EN: |
+            <p>~~HL2~~ 's Month of birth</p>
+  - name: LFS_DICT.HL5Y
+    conditions:
+      - questionText:
+          EN: |
+            <p>~~HL2~~'s Year of birth</p>
+  - name: LFS_DICT.HL6
+    conditions:
+      - questionText:
+          EN: |
+            <p>How old is ~~HL2~~?</p>
+  - name: LFS_DICT.HL8
+    conditions:
+      - questionText:
+          EN: |
+            <p>What is the current marital status of ~~HL2~~?&nbsp;</p>
+  - name: LFS_DICT.HL9
+    conditions:
+      - questionText:
+          EN: |
+            <p>What is ~~HL2~~'s type of union?</p>
+  - name: LFS_DICT.HL10
+    conditions:
+      - questionText:
+          EN: |
+            What is ~~HL2~~'s nationality?
+  - name: LFS_DICT.HL11
+    conditions:
+      - questionText:
+          EN: |
+            What is ~~HL2~~'s ethnicity?
+  - name: LFS_DICT.HL11X
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please specify<br></p>
+  - name: LFS_DICT.HL12
+    conditions:
+      - questionText:
+          EN: |
+            What is ~~HL2~~'s religion?
+  - name: LFS_DICT.HL12X
+    conditions:
+      - questionText:
+          EN: |
+            Please specify
+  - name: LFS_DICT.HH13
+    conditions:
+      - questionText:
+          EN: |
+            <p><b><font color="#0000ff">HOUSEHOLD SOURCES OF LIVELIHOOD</font></b></p><p><i>READ: Now I want to ask you a few questions about the household…<br></i></p><p>In the last 12 months, from ~~getlabel(HL5M_VS1,int(HH6/100)%100)~~ ~~int(HH6/10000)~~ up to last month, which of the following sources of livelihoods did the household have?</p><p><br></p><p><b><font color="#0000ff">Multiple responses possible</font></b></p><div><br></div><p></p>
+  - name: LFS_DICT.HH13X
+    conditions:
+      - questionText:
+          EN: |
+            Precise<div style="direction: ltr;"></div><p></p>
+  - name: LFS_DICT.HH14
+    conditions:
+      - questionText:
+          EN: |
+            In the last 12 months, which of those was the MAIN source of livelihoods of this household?<p></p>
+  - name: LFS_DICT.ED1
+    conditions:
+      - questionText:
+          EN: |
+            <p>Household line number</p>
+  - name: LFS_DICT.ED2
+    conditions:
+      - questionText:
+          EN: |
+            <p>Has ~~HL2(curocc())~~ ever attended school? [includes conventional &amp; madrassah]</p><p><p></p></p>
+  - name: LFS_DICT.ED3L
+    conditions:
+      - questionText:
+          EN: |
+            What is the highest level of school ~~HL2(curocc())~~&nbsp;has attended?<p></p>
+  - name: LFS_DICT.ED3G
+    conditions:
+      - questionText:
+          EN: |
+            What is the highest grade ~~HL2(curocc())~~&nbsp;completed at ~~getvaluelabel(ED3L)~~&nbsp;level?<p></p>
+  - name: LFS_DICT.ED4
+    conditions:
+      - questionText:
+          EN: |
+            Did ~~HL2(curocc())~~&nbsp;attend school at any time during the 2023-2024 school year?<p></p>
+  - name: LFS_DICT.ED5L
+    conditions:
+      - questionText:
+          EN: |
+            During this school year, what level is ~~HL2(curocc())~~&nbsp;attending?&nbsp;<p></p>
+  - name: LFS_DICT.ED5G
+    conditions:
+      - questionText:
+          EN: |
+            During this school year, what grade is ~~HL2(curocc())~~&nbsp;attending in ~~getvaluelabel(ED5L)~~ level?&nbsp;<p></p>
+  - name: LFS_DICT.ED6
+    conditions:
+      - questionText:
+          EN: |
+            <p>What was the main reason ~~HL2(curocc())~~&nbsp;never attended school?<br></p><p><p><br></p></p>
+  - name: LFS_DICT.ED6X
+    conditions:
+      - questionText:
+          EN: |
+            Precise<p></p>
+  - name: LFS_DICT.ED7
+    conditions:
+      - questionText:
+          EN: |
+            Can ~~HL2(curocc())~~&nbsp;read and write in any language?&nbsp; &nbsp;&nbsp;<p></p>
+  - name: LFS_DICT.ED8
+    conditions:
+      - questionText:
+          EN: |
+            What was ~~HL2(curocc())~~&nbsp;field of study?<p></p>
+  - name: LFS_DICT.ED9
+    conditions:
+      - questionText:
+          EN: |
+            <p>In the last 4 weeks, did ~~HL2(curocc())~~&nbsp;attend any courses, seminars or other training to develop specific skills, for example languages, computer skills, plumbing etc.? This include technical and vocational trainings</p><p><p></p></p>
+  - name: LFS_DICT.TR1
+    conditions:
+      - questionText:
+          EN: |
+            <p>Line number</p>
+  - name: LFS_DICT.TR2
+    conditions:
+      - questionText:
+          EN: |
+            <p>Name</p>
+  - name: LFS_DICT.TR3
+    conditions:
+      - questionText:
+          EN: |
+            <p>Has ~~TR2~~ attended a training course in the last 12 months?</p><p><span class="instruction">Interviewer: Includes attending a trade, technical or vocational trainings</span><br></p>
+  - name: LFS_DICT.TR4
+    conditions:
+      - questionText:
+          EN: |
+            <p>What is ~~TR2~~’s sector of training?<br></p><p><span class="instruction">Interviewer: formal training has somewhat fixed curriculum leading to nationally recognized qualification&nbsp;</span></p>
+  - name: LFS_DICT.TR5
+    conditions:
+      - questionText:
+          EN: |
+            <p>Name of training Course/programme of&nbsp;&nbsp;~~TR2~~ ?&nbsp;</p><p><span class="instruction">Interviewer:&nbsp;</span></p><p><span class="instruction">e.g. Accountancy, Nursing, Construction, Information Communication &amp; Technology, Tailoring &amp; Fashion Design, Tourism and Hospitality, Tie dye &amp; Batik etc</span></p><div><br></div>
+  - name: LFS_DICT.TR6
+    conditions:
+      - questionText:
+          EN: |
+            <p>Who was the main sponsor for the ~~TR2~~&nbsp; training?</p>
+  - name: LFS_DICT.TR6X
+    conditions:
+      - questionText:
+          EN: |
+            Please specify<p></p>
+  - name: LFS_DICT.TR7
+    conditions:
+      - questionText:
+          EN: |
+            <p>Was the training part of ~~TR2~~'s&nbsp;regular work?</p><p><br></p>
+  - name: LFS_DICT.TR8
+    conditions:
+      - questionText:
+          EN: |
+            Did ~~TR2~~'s&nbsp;complete the training?<p></p>
+  - name: LFS_DICT.TR9
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many months did/does the training take?<br></p>
+  - name: LFS_DICT.IM1
+    conditions:
+      - questionText:
+          EN: |
+            <p>Line number</p>
+  - name: LFS_DICT.IM2
+    conditions:
+      - questionText:
+          EN: |
+            <p>Name</p>
+  - name: LFS_DICT.IM3
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many years has ~~IM2~~ lived in this village/town/city?&nbsp;</p>
+  - name: LFS_DICT.IM4
+    conditions:
+      - questionText:
+          EN: |
+            <p>Which LGA did ~~IM2~~ move from?</p>
+  - name: LFS_DICT.IM4X
+    conditions:
+      - questionText:
+          EN: |
+            <p>Which <b>country</b> did ~~IM2~~ move from?</p>
+  - name: LFS_DICT.IM5
+    conditions:
+      - questionText:
+          EN: |
+            What was the main reason&nbsp; for ~~IM2~~&nbsp;moving to this village/town/city?
+  - name: LFS_DICT.IM5X
+    conditions:
+      - questionText:
+          EN: |
+            Please specify<p></p>
+  - name: LFS_DICT.IM6
+    conditions:
+      - questionText:
+          EN: |
+            <p>In which LGA was ~~IM2~~ born?</p><p><span class="instruction">Interviewer: if born abroad, please write the name of the country</span><br></p>
+  - name: LFS_DICT.IM6X
+    conditions:
+      - questionText:
+          EN: |
+            <p>In which <b>country</b> was ~~IM2~~ born?<br></p>
+  - name: LFS_DICT.MIG1
+    conditions:
+      - questionText:
+          EN: |
+            <p>Line number</p>
+  - name: LFS_DICT.MIG2
+    conditions:
+      - questionText:
+          EN: |
+            <p>Name</p>
+  - name: LFS_DICT.MIG3
+    conditions:
+      - questionText:
+          EN: |
+            Was ~~MIG2~~ born in The Gambia?&nbsp;
+  - name: LFS_DICT.MIG4
+    conditions:
+      - questionText:
+          EN: |
+            In which country was ~~MIG2~~&nbsp;born?&nbsp;
+  - name: LFS_DICT.MIG5M
+    conditions:
+      - questionText:
+          EN: |
+            <p>In which month did ~~MIG2~~ arrive to live in The Gambia?&nbsp;<br></p>
+  - name: LFS_DICT.MIG5Y
+    conditions:
+      - questionText:
+          EN: |
+            <p>In which year did ~~MIG2~~ arrive to live in The Gambia?&nbsp;<br></p>
+  - name: LFS_DICT.MIG6
+    conditions:
+      - questionText:
+          EN: |
+            <p>How long has ~~MIG2~~ been living in The Gambia?&nbsp;<br></p>
+  - name: LFS_DICT.MIG7
+    conditions:
+      - questionText:
+          EN: |
+            <p>What was ~~MIG2~~ main reason for moving to The Gambia?&nbsp;<br></p>
+  - name: LFS_DICT.MIG7X
+    conditions:
+      - questionText:
+          EN: |
+            Please specify<p></p>
+  - name: LFS_DICT.MIG8
+    conditions:
+      - questionText:
+          EN: |
+            <p>Is ~~MIG2~~ a citizen of…?&nbsp;<br></p>
+  - name: LFS_DICT.MIG9
+    conditions:
+      - questionText:
+          EN: |
+            <p>Which other country is ~~MIG2~~ a citizen of ?&nbsp;<br></p>
+  - name: LFS_DICT.FN1
+    conditions:
+      - questionText:
+          EN: |
+            <p>Line number</p>
+  - name: LFS_DICT.FN2
+    conditions:
+      - questionText:
+          EN: |
+            <p>Name</p>
+  - name: LFS_DICT.FN3
+    conditions:
+      - questionText:
+          EN: |
+            <p>The next questions ask about difficulties&nbsp;<b>&nbsp;<font color="#ff00ff">~~FN2~~</font></b> may have in doing certain activities.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br></p><p>Does ~~FN2~~ have difficulty seeing, even if wearing glasses? Would you say…?&nbsp;</p>
+  - name: LFS_DICT.FN4
+    conditions:
+      - questionText:
+          EN: |
+            Does ~~FN2~~ have difficulty hearing, even if using a hearing aid?&nbsp;
+  - name: LFS_DICT.FN5
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does ~~FN2~~ have difficulty walking or climbing steps?&nbsp;<br></p>
+  - name: LFS_DICT.FN6
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does ~~FN2~~ have difficulty remembering or concentrating?&nbsp;<br></p>
+  - name: LFS_DICT.FN7
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does ~~FN2~~ have difficulty with (self-care such as) washing all over or dressing?&nbsp;<br></p>
+  - name: LFS_DICT.FN8
+    conditions:
+      - questionText:
+          EN: |
+            <p>Using his/her usual/customary language, does ~~FN2~~ have difficulty communicating for example understanding or being understood by others?&nbsp;<br></p>
+  - name: LFS_DICT.HH12
+    conditions:
+      - questionText:
+          EN: |
+            <p>End hour of HH</p>
+  - name: LFS_DICT.II5A
+    conditions:
+      - questionText:
+          EN: |
+            <p>Line number</p>
+  - name: LFS_DICT.II5B
+    conditions:
+      - questionText:
+          EN: |
+            <p>Name</p>
+  - name: LFS_DICT.II6
+    conditions:
+      - logic: HL6(curocc()) < 12
+        questionText:
+          EN: |
+            <p><b><font color="#0000ff">Individual questionnaire for ~~II5B~~. </font></b></p><p><b><font color="#ff0000">Please call the guardian/parent of&nbsp; ~~II5B~~ to provide information.</font></b></p><p><br></p><p>Date of interview</p>
+      - logic: HL6(curocc()) >=12
+        questionText:
+          EN: |
+            <p><b><font color="#0000ff">Individual questionnaire for ~~II5B~~.</font></b></p><p><b><font color="#397b21">Please interview ~~II5B~~ himself/herself.</font></b></p><p><br></p><p>Date of interview</p><p></p>
+  - name: LFS_DICT.II7
+    conditions:
+      - questionText:
+          EN: |
+            <p>Start hour of individual interview</p>
+  - name: LFS_DICT.XSTART
+    conditions:
+      - questionText:
+          EN: |
+            <p>timestamp start ind</p>
+  - name: LFS_DICT.II8
+    conditions:
+      - questionText:
+          EN: |
+            <p><b>Introduction:</b> Hello, my name is (your name). I am from The Gambia Bureau of Statistics. We are conducting a survey about the labour force. The information we collect will help the government plan for employment. Your household and you are selected for the survey. I would like to talk to you about this subject. This interview usually takes about 45 minutes. All the information we obtain will remain strictly confidential and anonymous. If you do not wish to answer a question or stop the interview, please let me know.&nbsp;</p><p>May I start now?&nbsp;</p><div><br></div>
+  - name: LFS_DICT.EMP4
+    conditions:
+      - questionText:
+          EN: |
+            <p><b><font color="#0000ff">EMP: EMPLOYMENT LAST 7 DAYS&nbsp;<br></font></b></p><p>Now I would like to ask you questions about activities done in the last 7 days.<br></p><p>During the last 7 days did ~~II5B~~ work for someone else for pay, for one or more hours?</p><p>READ IF NEEDED:<br></p><p><span class="instruction">Interviewer: This casual or piece work for cash payment, or in-kind payment or in exchange for food or housing</span></p>
+  - name: LFS_DICT.EMP5
+    conditions:
+      - questionText:
+          EN: |
+            <p>Last week, did ~~II5B~~ run or do any kind of business, farming or other activity to generate income?</p><p><span class="instruction"><span style="color: rgb(0, 0, 0); font-size: 16px;">READ IF NEEDED:</span><br></span></p><p><span class="instruction">Interviewer:&nbsp;(e.g. Producing farm products for sale or exchange; Making or repairing things for sale; Selling things in the street, local market, or in a shop; Shining shoes, guarding cars or similar activities for tips; Any other activity to generate income; etc.)</span></p>
+  - name: LFS_DICT.EMP6
+    conditions:
+      - questionText:
+          EN: |
+            <p>Last week, did ~~II5B~~ help in a family business or farm?</p><p>READ IF NEEDED:</p><p><span class="instruction">(e.g. Help a family member engaged in an activity to generate income for the family; Help to produce farm products for sale or exchange; Help to make or sell things for sale or exchange; Guarding or cleaning the family business; etc.)&nbsp; &nbsp;</span></p><div><br></div>
+  - name: LFS_DICT.EMP7
+    conditions:
+      - questionText:
+          EN: |
+            <p>Did ~~II5B~~ have a paid job or income generating activity, but did not work last week?</p>
+  - name: LFS_DICT.EMP8
+    conditions:
+      - questionText:
+          EN: |
+            <p>Why was ~~II5B~~ absent from work in the last week?</p>
+  - name: LFS_DICT.EMP8X
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please specify</p>
+  - name: LFS_DICT.EMP9
+    conditions:
+      - questionText:
+          EN: |
+            <p>Including the time that ~~II5B~~ has been absent, will he/she return to that same job or business in 3 months or less?</p>
+  - name: LFS_DICT.EMP10
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does ~~II5B~~continue to receive an income from his/her job or business during this absence?</p>
+  - name: LFS_DICT.EMP11
+    conditions:
+      - questionText:
+          EN: |
+            <p>During the low or off-season, does ~~II5B~~ continue to do some work for that job or business?</p>
+  - name: LFS_DICT.EMP12
+    conditions:
+      - questionText:
+          EN: |
+            <p>Last week, did ~~II5B~~ do any work in… ?</p>
+  - name: LFS_DICT.EMP13
+    conditions:
+      - questionText:
+          EN: |
+            <p>Was this work that ~~II5B~~ mentioned in…?</p>
+  - name: LFS_DICT.EMP14
+    conditions:
+      - questionText:
+          EN: |
+            <p>Thinking about the work in (farming, rearing animals [and/or fishing]) that ~~II5B~~ does, are the products intended…… ?</p>
+  - name: LFS_DICT.EMP15
+    conditions:
+      - questionText:
+          EN: |
+            <p>Was ~~II5B~~ hired by someone else to do this work?</p>
+  - name: LFS_DICT.EMP16
+    conditions:
+      - questionText:
+          EN: |
+            <p>What are the main products from (farming, rearing animals, [and/or fishing]) that ~~II5B~~ was working on?</p>
+  - name: LFS_DICT.EMP16A
+    conditions:
+      - questionText:
+          EN: |
+            <p>ISIC CODE of <b><i>~~EMP16~~</i></b></p>
+  - name: LFS_DICT.EMP17
+    conditions:
+      - questionText:
+          EN: |
+            <p>Last week, on how many days did ~~II5B~~ do this work?</p>
+  - name: LFS_DICT.EMP18
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many hours per day did ~~II5B~~ spend doing this last week?</p>
+  - name: LFS_DICT.CM1
+    conditions:
+      - questionText:
+          EN: |
+            <p><font color="#0000ff"><b>CM : CHARACTERISTICS OF THE CURRENT MAIN JOB/BUSINESS ACTIVITY&nbsp;</b></font><b><font color="#0000ff">&nbsp;<br></font></b></p><div>Last week did ~~II5B~~ have more than one job or business?<br></div>
+  - name: LFS_DICT.CM1A
+    conditions:
+      - questionText:
+          EN: |
+            <p>Name of place of work or description of place of work/location of the main job of&nbsp; ~~II5B~~&nbsp;</p><p><span class="instruction">e.g. NAWEC, Kanifing Police Station, street seller, stall in a market, shop etc.&nbsp;</span><br></p><p></p>
+  - name: LFS_DICT.CM2
+    conditions:
+      - logic: CM1 = 2
+        questionText:
+          EN: |
+            <p>What is the main activity of your establishment or business where you worked?</p><p><span class="instruction">Interviewer:&nbsp;(e.g. <b>Restaurant </b>– preparing and serving meals; <b>shop</b> – selling groceries, <b>Farm </b>– cultivating cotton, <b>Workshop</b> – repairing bicycles, etc.)</span></p><p><br></p>
+      - logic: CM1 = 1
+        questionText:
+          EN: |
+            <p>Thinking about the job/business in which you usually work the most hours, what is the main activity of your establishment or business where you worked?</p><p><span class="instruction">Interviewer:&nbsp;(e.g.&nbsp;<b>Restaurant&nbsp;</b>– preparing and serving meals;&nbsp;<b>shop</b>&nbsp;– selling groceries,&nbsp;<b>Farm&nbsp;</b>– cultivating cotton,&nbsp;<b>Workshop</b>&nbsp;– repairing bicycles, etc.)</span></p><p></p>
+  - name: LFS_DICT.CM2A
+    conditions:
+      - questionText:
+          EN: |
+            <p>Main goods or services produced</p>
+  - name: LFS_DICT.CM2B
+    conditions:
+      - questionText:
+          EN: |
+            <p>ISIC CODE OF :&nbsp;<b><i>~~CM2~~.&nbsp;</i></b><b><i>~~CM2A~~</i></b></p>
+  - name: LFS_DICT.CM3
+    conditions:
+      - questionText:
+          EN: |
+            <p>~~II5B~~'s Occupational title</p><p><span class="instruction">Interviewer: example: <b>Farmer </b>- harvesting crops; <b>Weaver</b> – stitching and folding garments; <b>Waiter</b> – serving meals; <b>Domestic worker</b> – cleaning garden, <b>Teacher </b>- teaches at primary school)</span><br></p>
+  - name: LFS_DICT.CM3B
+    conditions:
+      - questionText:
+          EN: |
+            <p>Main tasks and duties</p><p><span class="instruction">Interviewer: e.g&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 14px;" class="instruction">harvesting crops</span></p>
+  - name: LFS_DICT.CM3C
+    conditions:
+      - questionText:
+          EN: |
+            <p>ISCO CODE OF&nbsp;&nbsp;<b><i>~~CM3~~.&nbsp;</i></b><b><i>~~CM3B~~</i></b></p>
+  - name: LFS_DICT.CM5
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does ~~II5B~~ work…?</p>
+  - name: LFS_DICT.CM6
+    conditions:
+      - questionText:
+          EN: |
+            <p>Who usually makes the decisions about the running of the family business?</p>
+  - name: LFS_DICT.CM7
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does the business hire any paid employees on a regular basis?</p>
+  - name: LFS_DICT.CM8
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does more than half of ~~II5B~~'s income come from the [business/activity] come from … ?</p>
+  - name: LFS_DICT.CM9
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does ~~II5B~~ get his/her customers, clients or buyers through someone else, for example from another company, intermediary or person?</p>
+  - name: LFS_DICT.CM9B1
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does this client /company /intermediary /person &nbsp;set the price of the products or services that&nbsp;&nbsp;~~II5B~~&nbsp;&nbsp;offer?</p>
+  - name: LFS_DICT.CM9B2
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does this client /company /intermediary /person &nbsp;set the minimum amount of sales or tasks&nbsp;&nbsp;~~II5B~~&nbsp;&nbsp;must complete?</p>
+  - name: LFS_DICT.CM9B3
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does this client /company /intermediary /person &nbsp;set the places, routes or areas where&nbsp;&nbsp;~~II5B~~&nbsp;&nbsp;do his/her work?</p>
+  - name: LFS_DICT.CM9B4
+    conditions:
+      - questionText:
+          EN: |
+            <p>&nbsp;~~II5B~~ : Does this client /company /intermediary /person &nbsp;decide how to organize&nbsp; the work?</p>
+  - name: LFS_DICT.CM9B5
+    conditions:
+      - questionText:
+          EN: |
+            <p>&nbsp;~~II5B~~ : Does this client /company /intermediary /person &nbsp;decide the supplier(s) to use?</p>
+  - name: LFS_DICT.CM9B6
+    conditions:
+      - questionText:
+          EN: |
+            <p>&nbsp;~~II5B~~ : Does this client /company /intermediary /person &nbsp;provide the premises or machines you use?</p>
+  - name: LFS_DICT.CM10
+    conditions:
+      - questionText:
+          EN: |
+            <p>In this job, is ~~II5B~~ working&nbsp; in….?</p>
+  - name: LFS_DICT.CM11
+    conditions:
+      - questionText:
+          EN: |
+            <p>Which of the following types of pay does ~~II5B~~ receive for this work?</p>
+  - name: LFS_DICT.CM11X
+    conditions:
+      - questionText:
+          EN: |
+            Please specify
+  - name: LFS_DICT.CM12
+    conditions:
+      - questionText:
+          EN: |
+            <p>Who pays ~~II5B~~ for that work?</p>
+  - name: LFS_DICT.CM12X
+    conditions:
+      - questionText:
+          EN: |
+            Please specify
+  - name: LFS_DICT.CM13
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does ~~II5B~~ have a written contract or oral agreement for the work he/she do/does?</p>
+  - name: LFS_DICT.CM14
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does ~~II5B~~'s contract or agreement specify the number of hours he/she is supposed to work?</p>
+  - name: LFS_DICT.CM15
+    conditions:
+      - questionText:
+          EN: |
+            <p>Is ~~II5B~~ at least guaranteed that he/she will get some work or hours in the job?</p>
+  - name: LFS_DICT.CM16
+    conditions:
+      - questionText:
+          EN: |
+            <p>What is ~~II5B~~’s agreed or contractual working hours per week in this job?</p>
+  - name: LFS_DICT.CM17
+    conditions:
+      - questionText:
+          EN: |
+            <p>Is ~~II5B~~'s contract or agreement….?</p>
+  - name: LFS_DICT.CM18
+    conditions:
+      - questionText:
+          EN: |
+            <p>How long in total is ~~II5B~~’s current agreement?</p>
+  - name: LFS_DICT.CM19
+    conditions:
+      - questionText:
+          EN: |
+            <p>Which of the following applies to ~~II5B~~’s current agreement?</p>
+  - name: LFS_DICT.CM20
+    conditions:
+      - questionText:
+          EN: |
+            <p>Is ~~II5B~~ on a probation period to get a permanent contract?</p>
+  - name: LFS_DICT.CM21
+    conditions:
+      - questionText:
+          EN: |
+            <p>Is ~~II5B~~’s work seasonal?</p>
+  - name: LFS_DICT.CM22
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does ~~II5B~~’s employer pay contributions to the pension fund such as&nbsp; Public Service Pension Scheme, the Federated Pension Fund, National Provident Fund (NPF), Special Provisions for National Assembly Members, LGA Authorities and Chiefs or Health Insurance for him/her?</p>
+  - name: LFS_DICT.CM23
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does ~~II5B~~ get paid annual leave?</p>
+  - name: LFS_DICT.CM24
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does ~~II5B~~ get paid sick leave in case of illness or injury?</p>
+  - name: LFS_DICT.CM25
+    conditions:
+      - questionText:
+          EN: |
+            <p>In what kind of place does ~~II5B~~ typically work?</p>
+  - name: LFS_DICT.CM25X
+    conditions:
+      - questionText:
+          EN: |
+            Please specify<p></p>
+  - name: LFS_DICT.CM26
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many persons including ~~II5B~~ work at his/her place of work?</p>
+  - name: LFS_DICT.CM27
+    conditions:
+      - questionText:
+          EN: |
+            <p>Is the business/establishment ~~II5B~~ works for registered with GAMBIA Revenue Authority (GRA)?</p>
+  - name: LFS_DICT.CM27A
+    conditions:
+      - questionText:
+          EN: |
+            <p>Is the business/establishment ~~II5B~~&nbsp;&nbsp;work(s) for registered with Ministry of Justice (MoJ)?</p>
+  - name: LFS_DICT.CM28
+    conditions:
+      - questionText:
+          EN: |
+            <p>Is the business ~~II5B~~ works for an incorporated business?</p><p><span class="instruction">E.g a Limited Partnership?</span></p>
+  - name: LFS_DICT.CM29
+    conditions:
+      - questionText:
+          EN: |
+            <p>What kind of accounts or records does the business keep? Are they…</p>
+  - name: LFS_DICT.CM30
+    conditions:
+      - questionText:
+          EN: |
+            <p>Which year did ~~II5B~~ begin working in this business or place?</p>
+  - name: LFS_DICT.CM31
+    conditions:
+      - questionText:
+          EN: |
+            <p>And which month?</p>
+  - name: LFS_DICT.CS1
+    conditions:
+      - questionText:
+          EN: |
+            <p><font color="#0000ff" style=""><b>CS: CHARACTERISTICS OF THE SECONDARY JOB / BUSINESS ACTIVITY IN THE LAST 7 DAYS&nbsp;</b></font><br></p><p>Considering ~~II5B~~'s second job/ business, what is the activity of your establishment or business in this job?</p><div><br></div>
+  - name: LFS_DICT.CS1A
+    conditions:
+      - questionText:
+          EN: |
+            <p>Goods or services produced</p>
+  - name: LFS_DICT.CS1B
+    conditions:
+      - questionText:
+          EN: |
+            <p>ISIC CODE OF&nbsp;&nbsp;<b><i>~~CS1~~.&nbsp;</i></b><b><i>~~CS1A~~</i></b></p>
+  - name: LFS_DICT.CS2
+    conditions:
+      - questionText:
+          EN: |
+            <p>What is ~~II5B~~&nbsp;&nbsp;work/ occupation in this job?</p>
+  - name: LFS_DICT.CS2A
+    conditions:
+      - questionText:
+          EN: |
+            <p>Main tasks and duties</p>
+  - name: LFS_DICT.CS2B
+    conditions:
+      - questionText:
+          EN: |
+            <p>ISCO CODE OF&nbsp;&nbsp;<b><i>~~CS2~~.&nbsp;</i></b><b><i>~~CS2A~~</i></b></p>
+  - name: LFS_DICT.CS3
+    conditions:
+      - questionText:
+          EN: |
+            <p>In this second job, does ~~II5B~~&nbsp;&nbsp;work…?</p>
+  - name: LFS_DICT.CS4
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does the business hire any paid employees on a regular basis?</p>
+  - name: LFS_DICT.CS5
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does more than half of ~~II5B~~'s&nbsp; income from the [business/activity] come from … ?</p>
+  - name: LFS_DICT.CS6
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does ~~II5B~~&nbsp;&nbsp;get his/her customers, clients or buyers through someone else, for example from another company, intermediary or person?</p>
+  - name: LFS_DICT.CS71
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does this client /company /intermediary /person &nbsp;set the price of the products or services that ~~II5B~~&nbsp;&nbsp;offer?</p>
+  - name: LFS_DICT.CS72
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does this client /company /intermediary /person &nbsp;set the minimum amount of sales or tasks ~~II5B~~&nbsp;&nbsp;must complete?</p>
+  - name: LFS_DICT.CS73
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does this client /company /intermediary /person &nbsp;set the places, routes or areas where ~~II5B~~&nbsp;&nbsp;do his/her work?</p>
+  - name: LFS_DICT.CS74
+    conditions:
+      - questionText:
+          EN: |
+            <p>~~II5B~~ : Does this client /company /intermediary /person &nbsp;decide how to organize the work?</p>
+  - name: LFS_DICT.CS75
+    conditions:
+      - questionText:
+          EN: |
+            <p>~~II5B~~ : Does this client /company /intermediary /person &nbsp;decide the supplier(s) to use?</p>
+  - name: LFS_DICT.CS76
+    conditions:
+      - questionText:
+          EN: |
+            <p>~~II5B~~ : Does this client /company /intermediary /person &nbsp;provide the premises or machines you use?</p>
+  - name: LFS_DICT.CS8
+    conditions:
+      - questionText:
+          EN: |
+            <p>Which of the following types of pay does ~~II5B~~&nbsp;&nbsp;receive for this work?</p>
+  - name: LFS_DICT.CS8X
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please specify</p>
+  - name: LFS_DICT.WKT1
+    conditions:
+      - questionText:
+          EN: |
+            <p><b style="color: rgb(0, 0, 255);">WKT : </b><font color="#0000ff"><b>WORKING TIME IN EMPLOYMENT&nbsp;</b></font></p><p>How many hours does ~~II5B~~&nbsp;&nbsp;usually work per week in his/her main job?</p>
+  - name: LFS_DICT.WKT2
+    conditions:
+      - questionText:
+          EN: |
+            <p>In total, how many hours did ~~II5B~~&nbsp;&nbsp;actually work in his/her main job last week?</p>
+  - name: LFS_DICT.WKT3
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many hours does ~~II5B~~&nbsp;&nbsp;usually work per week in his/her second job?</p>
+  - name: LFS_DICT.WKT4
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many hours did ~~II5B~~&nbsp;&nbsp;actually work last week in his/her second job?</p>
+  - name: LFS_DICT.WKT5
+    conditions:
+      - questionText:
+          EN: |
+            <p>Did ~~II5B~~&nbsp;&nbsp;have any other jobs last week?</p>
+  - name: LFS_DICT.WKT6
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many hours does ~~II5B~~&nbsp;&nbsp;usually work per week in all his/her other job(s)?</p>
+  - name: LFS_DICT.WKT7
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many hours did ~~II5B~~&nbsp;&nbsp;actually work last week in all his/her other job(s)?</p>
+  - name: LFS_DICT.WKT8A
+    conditions:
+      - questionText:
+          EN: |
+            <p>TOTAL HOURS USUALLY WORKED IN ALL &nbsp;JOB(S) (WKT1+WKT3+WKT6 = <b><font color="#0000ff">~~tot~~ hours</font></b>)</p>
+  - name: LFS_DICT.WKT8B
+    conditions:
+      - questionText:
+          EN: |
+            <p>TOTAL HOURS ACTUALLY WORKED IN ALL JOB(S) (WKT2+WKT4+WKT7)</p>
+  - name: LFS_DICT.WKT9
+    conditions:
+      - questionText:
+          EN: |
+            <p>During the last four weeks, that is from [DATE] up to [last DAY/yesterday] did ~~II5B~~&nbsp;&nbsp;look for additional or other paid work?</p>
+  - name: LFS_DICT.WKT10
+    conditions:
+      - questionText:
+          EN: |
+            <p>Would ~~II5B~~&nbsp;&nbsp;want to work more hours per week than usually worked, provided the extra hours are paid?</p>
+  - name: LFS_DICT.WKT11
+    conditions:
+      - questionText:
+          EN: |
+            <p>Could ~~II5B~~&nbsp;&nbsp;start working more hours within the next two weeks?</p>
+  - name: LFS_DICT.WKT12
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many additional hours per week could ~~II5B~~&nbsp;&nbsp;work?</p>
+  - name: LFS_DICT.WKT13
+    conditions:
+      - questionText:
+          EN: |
+            <p>To what extent is ~~II5B~~&nbsp;&nbsp;satisfied with his/her main job?</p>
+  - name: LFS_DICT.WKT14
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does ~~II5B~~&nbsp;&nbsp;want to change his/her current employment situation?</p>
+  - name: LFS_DICT.WKT15
+    conditions:
+      - questionText:
+          EN: |
+            <p>What is the main reason ~~II5B~~&nbsp;&nbsp;wants to change his/her employment situation?</p>
+  - name: LFS_DICT.WKT15X
+    conditions:
+      - questionText:
+          EN: |
+            Please specify
+  - name: LFS_DICT.OPA1
+    conditions:
+      - questionText:
+          EN: |
+            <p><b style="color: rgb(0, 0, 255);">OPA :&nbsp;</b><font color="#0000ff"><b>OWN USE PRODUCTION OF AGRICULTURE GOODS AMONG EMPLOYED PERSONS&nbsp;</b></font><br></p><p>READ: The next questions are about unpaid work in farming or fishing that ~~II5B~~&nbsp; may have done for his/her household or family last week. That is not to sell</p><p><span class="instruction">Interviewer: read and mark all that apply</span><br></p>
+  - name: LFS_DICT.OPA2
+    conditions:
+      - questionText:
+          EN: |
+            <p>What are the main (animals, farming, and/or [fishing]) products that ~~II5B~~ was working on for the family last week ?</p><p><span class="instruction">Interviewer: For example: [citrus fruits, vegetables, freshwater fish, cattle, chicken, rice]</span></p>
+  - name: LFS_DICT.OPA2A
+    conditions:
+      - questionText:
+          EN: |
+            <p>ISIC CODE</p>
+  - name: LFS_DICT.OPA3
+    conditions:
+      - questionText:
+          EN: |
+            <p>On how many days did ~~II5B~~ do this work last week?</p>
+  - name: LFS_DICT.OPA4
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many hours per day did ~~II5B~~ spend doing this last week?</p>
+  - name: LFS_DICT.EI1
+    conditions:
+      - questionText:
+          EN: |
+            <p><b style="color: rgb(0, 0, 255);">EI :&nbsp;</b><font color="#0000ff"><b>EMPLOYMENT RELATED INCOME&nbsp;</b></font><br></p><p>The last time ~~II5B~~ was paid in his/her main job, was he/she paid in cash such as salaries, wages, commissions, bonuses or tips?</p>
+  - name: LFS_DICT.EI2
+    conditions:
+      - questionText:
+          EN: |
+            <p>How much did ~~II5B~~ receive the last time he/she got paid?</p>
+  - name: LFS_DICT.EI3
+    conditions:
+      - questionText:
+          EN: |
+            <p>What period did this payment cover?</p>
+  - name: LFS_DICT.EI3X
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please specify</p>
+  - name: LFS_DICT.EI4
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many days did ~~II5B~~ work in his/her main job during that period?</p>
+  - name: LFS_DICT.EI5
+    conditions:
+      - questionText:
+          EN: |
+            <p>On average, how many hours did ~~II5B~~ work per day in his/her main job during that period?</p>
+  - name: LFS_DICT.EI6
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does ~~II5B~~'s employer provide him/her with …?(Please write all that apply)</p>
+  - name: LFS_DICT.EI6X
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please specify</p>
+  - name: LFS_DICT.EI7
+    conditions:
+      - questionText:
+          EN: |
+            <p>If one had to purchase those products, how much would they have cost? (Please round up)</p>
+  - name: LFS_DICT.EI8
+    conditions:
+      - questionText:
+          EN: |
+            <p>Did ~~II5B~~ have to pay any amount to receive these goods?</p>
+  - name: LFS_DICT.EI9
+    conditions:
+      - questionText:
+          EN: |
+            <p>How much did ~~II5B~~ pay? (Please round up)</p>
+  - name: LFS_DICT.EI10
+    conditions:
+      - questionText:
+          EN: |
+            <p>Last month, how much did ~~II5B~~ receive in additional income or earnings from any secondary activity(regular,occasional/exceptional, etc.)?</p>
+  - name: LFS_DICT.EI11
+    conditions:
+      - questionText:
+          EN: |
+            <p>Last month, how much did ~~II5B~~ make in net profit, from his/her main business or activity?</p>
+  - name: LFS_DICT.EI12
+    conditions:
+      - questionText:
+          EN: |
+            <p>Last month, did ~~II5B~~ take any products from his/her main business or activity for the household’s own use?</p>
+  - name: LFS_DICT.EI13
+    conditions:
+      - questionText:
+          EN: |
+            <p>If one had to purchase those products, how much would they have cost?(Please round up)</p>
+  - name: LFS_DICT.EI14
+    conditions:
+      - questionText:
+          EN: |
+            <p>Last month, how much did ~~II5B~~ receive in additional income or earnings from any secondary activity (regular, occasional/ exceptional, etc.)? (Please estimate the total for all secondary activities,and round up)</p>
+  - name: LFS_DICT.JS1
+    conditions:
+      - questionText:
+          EN: |
+            <p><b style="color: rgb(0, 0, 255);">JS :&nbsp;</b><font color="#0000ff"><b>JOB SEARCH&nbsp;</b></font><br></p><div>During the last 4 weeks, that is from [DATE] up to last week, did ~~II5B~~ look for a job or try to start a business?<br></div>
+  - name: LFS_DICT.JS2
+    conditions:
+      - questionText:
+          EN: |
+            <p>Or did ~~II5B~~ try to do anything to find any kind of work to generate income, even if small or casual jobs?</p>
+  - name: LFS_DICT.JS3
+    conditions:
+      - questionText:
+          EN: |
+            <p>What did ~~II5B~~ do in the last 4 weeks to find a job or try to start a business?</p><p> <span class="instruction">Interviewer: READ. Please record only the main job search activity</span></p>
+  - name: LFS_DICT.JS3X
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please specify</p>
+  - name: LFS_DICT.JS4
+    conditions:
+      - questionText:
+          EN: |
+            <p>Even though ~~II5B~~ did not look for work in the last 4 weeks, does ~~II5B~~ want to work for pay or profit?</p>
+  - name: LFS_DICT.JS5
+    conditions:
+      - questionText:
+          EN: |
+            <p>What was the Main reason ~~II5B~~ did not seek work or try to start a business during the last 4 weeks?</p>
+  - name: LFS_DICT.JS5X
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please specify</p>
+  - name: LFS_DICT.JS5B
+    conditions:
+      - questionText:
+          EN: |
+            How soon do&nbsp;&nbsp;~~II5B~~&nbsp;expect to start working in this new job or business?<p></p>
+  - name: LFS_DICT.JS6
+    conditions:
+      - questionText:
+          EN: |
+            <p>How long has ~~II5B~~ been without work and trying to find a job or start a business?</p>
+  - name: LFS_DICT.JS7
+    conditions:
+      - questionText:
+          EN: |
+            <p>If a job or business opportunity had been available, could ~~II5B~~ have started working last week?</p>
+  - name: LFS_DICT.JS7B
+    conditions:
+      - questionText:
+          EN: |
+            <p>Could ~~II5B~~ start working within the next two weeks?</p>
+  - name: LFS_DICT.JS8
+    conditions:
+      - questionText:
+          EN: |
+            <p>What is the main reason ~~II5B~~ do not want or are not available to work?</p>
+  - name: LFS_DICT.JS8X
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please specify</p>
+  - name: LFS_DICT.JS9
+    conditions:
+      - questionText:
+          EN: |
+            <p>At any time in the last 12 months, that is since ~~getlabel(HL5M_VS1,int(HH6/100)%100)~~ ~~int(HH6/10000)~~&nbsp;&nbsp;up to last month, did ~~II5B~~ look for a paid job or try to start a business?</p>
+  - name: LFS_DICT.OPG1
+    conditions:
+      - questionText:
+          EN: |
+            <p><b style="color: rgb(0, 0, 255);">OPG :&nbsp;</b><font color="#0000ff"><b>OWN USE PRODUCTION OF OTHER GOODS&nbsp;</b></font><br></p><div>Last week, did ~~II5B~~ gather wild food such as [mushrooms, herbs...]?<br></div>
+  - name: LFS_DICT.OPG2
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many hours did ~~II5B~~ spend doing this last week?</p>
+  - name: LFS_DICT.OPG3
+    conditions:
+      - questionText:
+          EN: |
+            <p>Last week, did ~~II5B~~ go hunting for [bush meat...]?</p>
+  - name: LFS_DICT.OPG4
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many hours did ~~II5B~~ spend doing this last week?</p>
+  - name: LFS_DICT.OPG5
+    conditions:
+      - questionText:
+          EN: |
+            <p>Last week, ~~II5B~~ prepare preserved food or drinks for storage such as [flour, dried fish, butter, cheese...]?</p>
+  - name: LFS_DICT.OPG6
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many hours did ~~II5B~~ spend doing this last week?</p>
+  - name: LFS_DICT.OPG7
+    conditions:
+      - questionText:
+          EN: |
+            <p>Last week, did ~~II5B~~ do any construction work to build, renovate or extend the family home or help a family member with similar work?</p>
+  - name: LFS_DICT.OPG8
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many hours did ~~II5B~~ spend doing this last week?</p>
+  - name: LFS_DICT.OPG9
+    conditions:
+      - questionText:
+          EN: |
+            <p>Last week, did ~~II5B~~ spend any time making goods for use by your household or family such as [mats, baskets, furniture, clothing,..]?</p>
+  - name: LFS_DICT.OPG10
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many hours did ~~II5B~~ spend doing this last week?</p>
+  - name: LFS_DICT.OPG11
+    conditions:
+      - questionText:
+          EN: |
+            <p>Last week, did ~~II5B~~ fetch water from natural or public sources for use by your household or family?</p>
+  - name: LFS_DICT.OPG12
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many hours did ~~II5B~~ spend doing this last week?</p>
+  - name: LFS_DICT.OPG13
+    conditions:
+      - questionText:
+          EN: |
+            <p>Last week, did ~~II5B~~ collect any firewood [or other natural products] for use as fuel by your household or family?</p>
+  - name: LFS_DICT.OPG14
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many hours did ~~II5B~~ spend doing this last week?</p>
+  - name: LFS_DICT.OPG15
+    conditions:
+      - questionText:
+          EN: |
+            <p>In the last 4 weeks from [START DATE] up to [last END DAY/yesterday] did ~~II5B~~ participate in any unpaid apprenticeship, internship or similar training in a work place?</p>
+  - name: LFS_DICT.OPG16
+    conditions:
+      - questionText:
+          EN: |
+            <p>How many hours did ~~II5B~~ spend doing this last week?</p>
+  - name: LFS_DICT.H1
+    conditions:
+      - questionText:
+          EN: |
+            <p><b style="color: rgb(0, 0, 255);">H :&nbsp;</b><font color="#0000ff"><b>HAZARDOUS WORK : FOR CHILDREN 5 TO 17&nbsp;</b></font><br></p><div><font color="#0000ff"><b><br></b></font></div><p>READ: We would like to know more about the things that children and adolescents around the world are doing when they are at work. These question will help people to know how to keep children safe. Now I want you to think about work that ~~II5B~~ has been doing during the past week. Was ~~II5B~~ doing any of these things at&nbsp; work?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p><p>Carrying or pushing or pulling heavy loads?</p>
+  - name: LFS_DICT.H2
+    conditions:
+      - questionText:
+          EN: |
+            <p>Working where ~~II5B~~ had to climb high off the floor/ground, from where if he/she fell, he/she might be injured?</p>
+  - name: LFS_DICT.H3
+    conditions:
+      - questionText:
+          EN: |
+            <p>Using powered tools (electric or gas)?</p>
+  - name: LFS_DICT.H4
+    conditions:
+      - questionText:
+          EN: |
+            <p>Using sharp tools?</p>
+  - name: LFS_DICT.H5
+    conditions:
+      - questionText:
+          EN: |
+            <p>Using big or heavy machines, or driving vehicles?</p>
+  - name: LFS_DICT.H6
+    conditions:
+      - questionText:
+          EN: |
+            <p>Working with fire, ovens or very hot machines or tools, or unsafe electric wires/cables, where ~~II5B~~ might get burned?</p>
+  - name: LFS_DICT.H7
+    conditions:
+      - questionText:
+          EN: |
+            <p>Working in very a noisy place, so that ~~II5B~~ had to shout to speak</p>
+  - name: LFS_DICT.H8
+    conditions:
+      - questionText:
+          EN: |
+            <p>Working indoors or outdoors where dust, sand, smoke or fumes make it hard to breathe or see clearly?</p>
+  - name: LFS_DICT.H9
+    conditions:
+      - questionText:
+          EN: |
+            <p>Working in a place that is very cold, or working outdoors in very rainy or wet weather?</p>
+  - name: LFS_DICT.H10
+    conditions:
+      - questionText:
+          EN: |
+            <p>Working long hours in the hot sun without a break?</p>
+  - name: LFS_DICT.H11
+    conditions:
+      - questionText:
+          EN: |
+            <p>Working below the ground in mining wells or tunnels or other very small spaces?</p>
+  - name: LFS_DICT.H12
+    conditions:
+      - questionText:
+          EN: |
+            <p>Working underwater?</p>
+  - name: LFS_DICT.H13
+    conditions:
+      - questionText:
+          EN: |
+            <p>Working with or around agricultural chemicals? Or helping someone else to do this</p>
+  - name: LFS_DICT.H14
+    conditions:
+      - questionText:
+          EN: |
+            <p>Working with liquids or powders that irritate your skin, burn easily, give off vapours that smell bad or can explode?</p>
+  - name: LFS_DICT.H15
+    conditions:
+      - questionText:
+          EN: |
+            <p>Working during the night-time or very early in the morning, when it is dark?</p>
+  - name: LFS_DICT.H16
+    conditions:
+      - questionText:
+          EN: |
+            <p>Working in contact with large domestic animals</p>
+  - name: LFS_DICT.H17
+    conditions:
+      - questionText:
+          EN: |
+            <p>Doing the same task over and over again at a fast pace for long hours?</p>
+  - name: LFS_DICT.H18
+    conditions:
+      - questionText:
+          EN: |
+            <p>Do ~~II5B~~ generally feel safe at work?</p>
+  - name: LFS_DICT.H19
+    conditions:
+      - questionText:
+          EN: |
+            <p>Has ~~II5B~~ ever been punished for mistakes made at work?</p>
+  - name: LFS_DICT.H20
+    conditions:
+      - questionText:
+          EN: |
+            <p>Would ~~II5B~~ be allowed to leave his/her workplace if&nbsp; he/she were very ill, injured, had a serious family problem or wanted to quit?</p>
+  - name: LFS_DICT.H21
+    conditions:
+      - questionText:
+          EN: |
+            <p>Sometimes people at work can hurt children and adolescents physically. Thinking about ~~II5B~~ the work he/she is doing now, has anyone at work slapped him/her, punched him/her, kicked him/her or done anything else to hurt him/her physically?</p>
+  - name: LFS_DICT.H22
+    conditions:
+      - questionText:
+          EN: |
+            <p>Who did this to ~~II5B~~?</p>
+  - name: LFS_DICT.H23
+    conditions:
+      - questionText:
+          EN: |
+            <p>Sometimes, when children and adolescents are at work people say or do things that scare them or make them worry about their safety. Since ~~II5B~~ has worked at this job, has anyone at work ever threatened to hurt him/her?</p>
+  - name: LFS_DICT.H24
+    conditions:
+      - questionText:
+          EN: |
+            <p>Who did this to ~~II5B~~?</p>
+  - name: LFS_DICT.H25
+    conditions:
+      - questionText:
+          EN: |
+            <p>Sometimes when children and adolescents are at work people say or do things to make them feel bad. Since ~~II5B~~ has worked in this job, has anyone at work ridiculed him/her, insulted him/her or made him/her feel ashamed?</p>
+  - name: LFS_DICT.H26
+    conditions:
+      - questionText:
+          EN: |
+            <p>Who did this to ~~II5B~~?</p>
+  - name: LFS_DICT.EBR1
+    conditions:
+      - questionText:
+          EN: |
+            <p><b><font color="#0000ff">BARRIERS TO EMPLOYMENT</font></b></p><p><b><font color="#0000ff">BARRIERS</font></b></p><p><br></p><p>Which of the following factors would make it more likely for&nbsp;&nbsp;~~II5B~~&nbsp;to seek or find a job…?</p>
+  - name: LFS_DICT.EBR1X
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please specify</p>
+  - name: LFS_DICT.EBR2
+    conditions:
+      - questionText:
+          EN: |
+            <p>How supportive would family members be if&nbsp;&nbsp;~~II5B~~&nbsp;decide to work? Would you say…</p>
+  - name: LFS_DICT.WPA1
+    conditions:
+      - questionText:
+          EN: |
+            <p><b><font color="#0000ff">BARRIERS TO EMPLOYMENT</font></b></p><p><b><font color="#0000ff">WORKPLACE ACCOMODATION</font></b></p><p>Is&nbsp;&nbsp;~~II5B~~’s work schedule or work tasks arranged to account for difficulties&nbsp;&nbsp;~~II5B~~&nbsp;have in doing certain activities…?</p>
+  - name: LFS_DICT.WPA2
+    conditions:
+      - questionText:
+          EN: |
+            <p>Has&nbsp;&nbsp;~~II5B~~’s workplace been modified to account for difficulties&nbsp;&nbsp;~~II5B~~&nbsp;have in doing certain activities…?</p>
+  - name: LFS_DICT.ATT1
+    conditions:
+      - questionText:
+          EN: |
+            <p><b><font color="#0000ff">ATTITUDE</font></b></p><p>&nbsp;~~II5B~~ : In your view, how willing are employers to hire persons with disabilities? &nbsp;Would you say…</p>
+  - name: LFS_DICT.ATT2
+    conditions:
+      - questionText:
+          EN: |
+            <p>&nbsp;~~II5B~~ : In your view, how willing are workers to work alongside persons with disabilities? Would you say…</p>
+  - name: LFS_DICT.SPR1
+    conditions:
+      - questionText:
+          EN: |
+            <p><b><font color="#0000ff">SOCIAL PROTECTION</font></b></p><p>Have the difficulties&nbsp;&nbsp;~~II5B~~&nbsp;have been officially recognized (certified) as a disability?</p>
+  - name: LFS_DICT.SPR2
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does&nbsp;&nbsp;~~II5B~~&nbsp;receive any cash benefits from the government linked to [his/her] disability?</p>
+  - name: LFS_DICT.SPR3
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does&nbsp;&nbsp;~~II5B~~ receives any goods or services from the government linked to [his/her] disability?</p>
+  - name: LFS_DICT.II9
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please select the result of the individual interview</p>
+  - name: LFS_DICT.II9X
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please specify</p>
+  - name: LFS_DICT.II10
+    conditions:
+      - questionText:
+          EN: |
+            <p>End hour of individual interview</p>
+  - name: LFS_DICT.XEND
+    conditions:
+      - questionText:
+          EN: |
+            <p>timestamp end ind</p>
+  - name: LFS_DICT.XGPS
+    conditions:
+      - questionText:
+          EN: |
+            <p>Collect GPS</p>
+  - name: LFS_DICT.LON
+    conditions:
+      - questionText:
+          EN: |
+            <p>Longitude</p>
+  - name: LFS_DICT.LAT
+    conditions:
+      - questionText:
+          EN: |
+            <p>Latitude</p>
+  - name: LFS_DICT.ALT
+    conditions:
+      - questionText:
+          EN: |
+            <p>Altitude</p>
+  - name: LFS_DICT.HH11
+    conditions:
+      - questionText:
+          EN: |
+            <p>Result of household questionnaire</p>
+  - name: LFS_DICT.HH11X
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please specify</p>
+  - name: LFS_DICT.BADCLOSEDHH
+    conditions:
+      - questionText:
+          EN: |
+            <p>Bad closed</p>
+  - name: LFS_DICT.XENDHH
+    conditions:
+      - questionText:
+          EN: |
+            <p>timestamp end HH</p>
+  - name: LFS_DICT.CM4
+    conditions:
+      - questionText:
+          EN: |
+            <p>How long has ~~II5B~~ worked for this employer/business/activity?</p>
+  - name: LFS_DICT.CM9B
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does this client / company / intermediary / person set ...?</p>
+  - name: LFS_DICT.CS7
+    conditions:
+      - questionText:
+          EN: |
+            <p>Does this client / company / intermediary / person set ...?</p>
+  - name: LFS_DICT.IM5B
+    conditions:
+      - questionText:
+          EN: |
+            <p>What was the second main reason&nbsp; for ~~IM2~~ moving to this village/town/city?</p><p><span class="instruction">Interviewer: If no second reason, select </span><b><span class="instruction">NO SECOND REASON.</span></b></p>
+  - name: LFS_DICT.IM5BX
+    conditions:
+      - questionText:
+          EN: |
+            Please specify<p></p>
+  - name: LFS_DICT.IM5C
+    conditions:
+      - questionText:
+          EN: |
+            <p>What was the third main reason&nbsp; for ~~IM2~~ moving to this village/town/city?</p><p><span class="instruction">Interviewer: If no third reason, select&nbsp;&nbsp;</span><b><span class="instruction">NO MORE REASON.</span></b></p>
+  - name: LFS_DICT.IM5CX
+    conditions:
+      - questionText:
+          EN: |
+            Please specify
+  - name: LFS_DICT.TR10
+    conditions:
+      - questionText:
+          EN: |
+            Did ~~TR2~~&nbsp;&nbsp;receive any certificate for this training?&nbsp;
+  - name: LFS_DICT.TR5X
+    conditions:
+      - questionText:
+          EN: |
+            <p>Please specify</p>
+  - name: LFS_DICT.TR8X
+    conditions:
+      - questionText:
+          EN: |
+            Please specify
+...

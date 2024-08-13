@@ -1,0 +1,107 @@
+﻿[FormFile]
+Version=CSPro 7.7
+Name=MENU_FF
+Label=MENU
+DefaultTextFont=-019 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+FieldEntryFont=-027 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0049 Courier New
+Type=SystemControlled
+  
+[Dictionaries]
+File=..\DICTS\MENU.dcf
+  
+[Form]
+Name=FORM000
+Label=MENU Level
+QuestionTextHeight=179
+Level=1
+Size=738,401
+  
+Item=USERCODE
+Item=OPTION
+Item=GOPT
+Item=CNULSAMP
+  
+  
+[Text]
+Name=TEXT1
+Position=45,18,713,55
+Text=LABOUR FORCE SURVEY -- GAMBIA 2024 --
+Form=1
+Font=-032 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+Color=16711680
+ 
+  
+[Text]
+Name=TEXT2
+Position=258,74,445,111
+Text=USER MENU
+Form=1
+Font=-032 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+Color=16711935
+ 
+[EndForm]
+  
+[Level]
+Name=MENU_LEVEL
+Label=MENU Level
+  
+[Group]
+Required=Yes
+Name=MENU_LEVEL_FORM
+Label=MENU Level
+Form=1
+Max=1
+  
+[Field]
+Name=USERCODE
+Position=240,160,298,193
+Item=USERCODE,MENU_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=82,163,190,185
+Text=USERCODE
+ 
+  
+[Field]
+Name=CNULSAMP
+Position=241,224,375,257
+Item=CNULSAMP,MENU_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=77,234,185,256
+Text=CNULSAMP
+ 
+  
+[Field]
+Name=GOPT
+Position=240,281,260,314
+Item=GOPT,MENU_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=79,283,135,305
+Text=GOPT
+ 
+  
+[Field]
+Name=OPTION
+Position=236,343,275,376
+Item=OPTION,MENU_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=78,346,152,368
+Text=OPTION
+ 
+[EndGroup]
+  

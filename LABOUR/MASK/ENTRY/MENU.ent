@@ -1,0 +1,33 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=MENU
+Name=MENU
+AppType=DataEntry
+OperatorID=No
+CAPI=Yes
+CreateListing=No
+CreateLog=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+UseHtmlDialogs=No
+ParadataCollection=AllEvents
+ParadataRecordInitialPropertyValues=Yes
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=..\DICTS\LFS.dcf
+File=..\DICTS\FOLLOW.dcf
+File=..\DICTS\SAMPLE.dcf
+[AppCode]
+File=.\MENU.ent.apc
+Include=..\REF\functions.apc
+[Message]
+File=.\MENU.ent.mgf
+[Help]
+File=.\MENU.ent.qsf
+[Forms]
+File=.\MENU.fmf
+[Dictionary Types]
+Dict-Type=..\DICTS\MENU.dcf,Input,.\MENU.fmf
+Dict-Type=..\DICTS\LFS.dcf,External
+Dict-Type=..\DICTS\FOLLOW.dcf,External
+Dict-Type=..\DICTS\SAMPLE.dcf,External

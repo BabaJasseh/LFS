@@ -1,0 +1,74 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: MENU_DICT.USERCODE
+    conditions:
+      - questionText:
+          EN: |
+            <p><font color="#ff00ff"><span style="font-size: 18px;"><b>LABOUR FORCE SURVEY -- GAMBIA 2022 --</b></span></font></p><p><span style="color: rgb(0, 0, 255); font-size: 18px; font-weight: bold;">Please, select your name in the list below to configure your tablet.&nbsp;</span><br></p><p><span style="font-weight: bold; font-style: italic; font-size: 18px;">You can use search button to find quickly.</span></p><p></p>
+  - name: MENU_DICT.CNULSAMP
+    conditions:
+      - questionText:
+          EN: |
+            <p><font color="#ff00ff"><span style="font-size: 18px;"><b>LABOUR FORCE SURVEY -- GAMBIA 2022 --</b></span></font></p><p>Please, select the cluster that you want to work<br></p><p></p><p></p><p></p>
+  - name: MENU_DICT.GOPT
+    conditions:
+      - questionText:
+          EN: |
+            Select the group of options appropriate to the task you wish to perform<p></p>
+  - name: MENU_DICT.OPTION
+    conditions:
+      - questionText:
+          EN: |
+            <p class="MsoNormal" align="center" style="text-align: left; margin-top: 4pt;"><span style="color: rgb(0, 0, 255); font-size: 18px; font-weight: 700;">Select an option&nbsp;</span>&nbsp;<br></p><p></p><p></p>
+  - name: MENU_DICT.GRAPPE
+    conditions:
+      - questionText:
+          EN: |
+            <font color="#0000ff"><span style="font-size: 18px;"><b>Unique CLUSTER number for the project CFSVA</b></span></font><p></p>
+  - name: MENU_DICT.XARRONDISSEMENT
+    conditions:
+      - questionText:
+          EN: |
+            Sub-division<p></p>
+  - name: MENU_DICT.XDEPARTEMENT
+    conditions:
+      - questionText:
+          EN: |
+            Division<p></p>
+  - name: MENU_DICT.XREGION
+    conditions:
+      - questionText:
+          EN: |
+            
+  - name: MENU_DICT.ZDRGPH4
+    conditions:
+      - questionText:
+          EN: |
+            N° RGPH4 of EA<p></p>
+...

@@ -1,0 +1,17 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+
+[Files]
+Application=.\MENU.ent
+InputData=..\DATA\M01010101.csdb
+
+[ExternalFiles]
+FOLLOW_DICT=..\DICTS\follow.csdb
+LFS_DICT=..\DICTS\lfs.csdb
+SAMPLE_DICT=..\DICTS\sample.csdb
+
+[UserFiles]
+FileAgentCode=
+piffile=
+tempfile=

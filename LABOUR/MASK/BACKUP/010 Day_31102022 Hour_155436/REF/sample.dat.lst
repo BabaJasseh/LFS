@@ -1,0 +1,42 @@
+﻿Application     D:\2022\GAMBIE\LABOUR\MASK\ENTRY\SAMPLE.ent
+Type            ENTRY
+Input Data      <<Text File>> D:\2022\GAMBIE\LABOUR\MASK\REF\sample.dat
+External        FOLLOW_DICT=<<Text File>> D:\2022\GAMBIE\LABOUR\MASK\REF\follow.dat
+<File>          tempfile=
+
+Date            Oct 31, 2022
+Start Time      15:02:53
+End Time        15:26:33
+
+
+
+CSPro Executor Normal End
+------------------------------------------------------------------------------------------------------------------------
+Application     D:\2022\GAMBIE\LABOUR\MASK\ENTRY\SAMPLE.ent
+Type            ENTRY
+Input Data      <<Text File>> D:\2022\GAMBIE\LABOUR\MASK\REF\sample.dat
+External        FOLLOW_DICT=<<Text File>> D:\2022\GAMBIE\LABOUR\MASK\REF\follow.dat
+<File>          tempfile=
+
+Date            Oct 31, 2022
+Start Time      15:31:29
+End Time        15:34:33
+
+
+
+CSPro Executor Normal End
+------------------------------------------------------------------------------------------------------------------------
+Application     D:\2022\GAMBIE\LABOUR\MASK\ENTRY\SAMPLE.ent
+Type            ENTRY
+Input Data      <<Text File>> D:\2022\GAMBIE\LABOUR\MASK\REF\sample.dat
+External        FOLLOW_DICT=<<Text File>> D:\2022\GAMBIE\LABOUR\MASK\REF\follow.dat
+<File>          tempfile=
+
+Date            Oct 31, 2022
+Start Time      15:41:55
+End Time        15:42:09
+
+
+
+CSPro Executor Normal End
+------------------------------------------------------------------------------------------------------------------------

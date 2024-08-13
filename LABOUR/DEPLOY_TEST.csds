@@ -1,0 +1,46 @@
+{
+  "fileType": "Application Deployment Specification",
+  "version": "7.7",
+  "name": "LABOUR2024",
+  "description": "GAMBIA LFS 2024",
+  "files": [
+    {
+      "path": ".\\MASK\\ENTRY\\LFS.ent"
+    },
+    {
+      "path": ".\\MASK\\ENTRY\\MENU.ent"
+    },
+    {
+      "path": ".\\MASK\\ENTRY\\MENU.pff"
+    },
+    {
+      "path": ".\\MASK\\ENTRY\\SAMPLE.ent"
+    },
+    {
+      "path": ".\\MASK\\REF\\follow.dat"
+    },
+    {
+      "onlyOnFirstInstall": true,
+      "path": ".\\MASK\\REF\\sample.dat"
+    }
+  ],
+  "dictionaries": [
+    {
+      "path": ".\\MASK\\DICTS\\FOLLOW.dcf"
+    },
+    {
+      "path": ".\\MASK\\DICTS\\LFS.dcf"
+    },
+    {
+      "path": ".\\MASK\\DICTS\\MENU.dcf"
+    },
+    {
+      "path": ".\\MASK\\DICTS\\SAMPLE.dcf"
+    }
+  ],
+  "deployment": {
+    "type": "FTP",
+    "cswebUrl": "https:\/\/csweb.icfcloud.com\/api\/",
+    "ftpUrl": "ftp:\/\/217.112.80.251"
+  }
+}

@@ -1,0 +1,26 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Batch
+
+[DataEntryInit]
+OperatorID=Anyone
+ShowInApplicationListing = hidden
+
+[Files]
+Application=.\EXPORT.bch
+InputData=..\WORK\MALL.csdb
+OutputData=|type=None
+Listing=.\EXPORT.lst
+
+[UserFiles]
+household=.\hh.dat
+household1=.\hh1.dat
+individual=.\IND.dat
+
+[Parameters]
+ViewListing=Always
+ViewResults=Yes
+ListingWidth=120
+MessageWrap=No
+ErrmsgOverride=No
+InputOrder=Sequential

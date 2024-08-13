@@ -1,0 +1,28 @@
+﻿Application     C:\Users\User\Downloads\LFS APPLICATION\LABOUR 22 12 2022 C\LABOUR\MASK\EXPORT\EXPORT.bch
+Type            BATCH
+Input Data      <<CSPro DB>> C:\Users\User\Downloads\LFS APPLICATION\LABOUR 22 12 2022 C\LABOUR\MASK\WORK\MALL.csdb
+Output Data     <<Empty>> 
+<File>          household=C:\Users\User\Downloads\LFS APPLICATION\LABOUR 22 12 2022 C\LABOUR\MASK\EXPORT\hh.dat
+<File>          individual=C:\Users\User\Downloads\LFS APPLICATION\LABOUR 22 12 2022 C\LABOUR\MASK\EXPORT\IND.dat
+
+Date            Jan 11, 2023
+Start Time      18:14:09
+End Time        18:14:12
+
+CSPro Process Summary
+
+      ╔══════════════════════════════════════════════════════╗
+      ║     54211 Records Read   100% of input file          ║
+      ║         0 Ignored:       0 Unknown         0 Erased  ║
+      ║         0 Messages:      0 E      0 W      0 User    ║
+      ╠═════════╦══════════════╦══════════════╦══════════════╣
+      ║  Level  ║  Input Case  ║  Bad Struct  ║  Level Post  ║
+      ╠═════════╬══════════════╬══════════════╬══════════════╣
+      ║      1  ║         889  ║           0  ║         889  ║
+      ╚═════════╩══════════════╩══════════════╩══════════════╝
+
+Process Messages
+
+
+CSPro Executor Normal End
+------------------------------------------------------------------------------------------------------------------------

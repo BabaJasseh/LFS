@@ -1,0 +1,89 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: SAMPLE_DICT.XCLUSTER
+    conditions:
+      - questionText:
+          EN: |
+            <p>Cluster number</p>
+  - name: SAMPLE_DICT.XTOTAL
+    conditions:
+      - questionText:
+          EN: |
+            <p>Total households in sample</p>
+  - name: SAMPLE_DICT.XSUP
+    conditions:
+      - questionText:
+          EN: |
+            <p>Supervisor code</p>
+  - name: SAMPLE_DICT.XNUMBER
+    conditions:
+      - questionText:
+          EN: |
+            <p>Sequential sampled number of household</p>
+  - name: SAMPLE_DICT.XHHNUM
+    conditions:
+      - questionText:
+          EN: |
+            <p>Household number from the listing</p>
+  - name: SAMPLE_DICT.XNAME
+    conditions:
+      - questionText:
+          EN: |
+            <p>Name of household head</p>
+  - name: SAMPLE_DICT.XSIZE
+    conditions:
+      - questionText:
+          EN: |
+            <p>Size of household</p>
+  - name: SAMPLE_DICT.XLODGING
+    conditions:
+      - questionText:
+          EN: |
+            <p>Place of lodging</p>
+  - name: SAMPLE_DICT.XINTCODE
+    conditions:
+      - questionText:
+          EN: |
+            <p>Select Interviewer assigned to household of&nbsp;<b><font color="#0000ff"> ~~XNAME~~</font></b></p><p><i><font color="#ff00ff"><b style="">Line&nbsp;&nbsp;</b><b style="">~~XNUMBER~~</b></font></i></p>
+  - name: SAMPLE_DICT.XLONGITUDE
+    conditions:
+      - questionText:
+          EN: |
+            <p>Longitude</p>
+  - name: SAMPLE_DICT.XLATITUDE
+    conditions:
+      - questionText:
+          EN: |
+            <p>Latitude</p>
+  - name: SAMPLE_DICT.XPHONE
+    conditions:
+      - questionText:
+          EN: |
+            <p>Phone number</p>
+...

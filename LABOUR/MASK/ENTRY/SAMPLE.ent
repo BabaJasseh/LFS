@@ -1,0 +1,24 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=SAMPLE
+Name=SAMPLE
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+PartialSave=Yes
+CAPI=Yes
+[External Dictionaries]
+File=..\DICTS\FOLLOW.dcf
+File=..\DICTS\MENU.dcf
+[AppCode]
+File=.\SAMPLE.ent.apc
+[Message]
+File=.\SAMPLE.ent.mgf
+[Help]
+File=.\SAMPLE.ent.qsf
+[Forms]
+File=.\SAMPLE.fmf
+[Dictionary Types]
+Dict-Type=..\DICTS\SAMPLE.dcf,Input,.\SAMPLE.fmf
+Dict-Type=..\DICTS\FOLLOW.dcf,External
+Dict-Type=..\DICTS\MENU.dcf,External

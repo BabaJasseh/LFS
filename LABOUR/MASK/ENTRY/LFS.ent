@@ -1,0 +1,27 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=LFS
+Name=LFS
+AppType=DataEntry
+OperatorID=No
+ShowEndCaseDialog=No
+PartialSave=Yes
+AutoPartialSaveMinutes=5
+CAPI=Yes
+CreateListing=No
+CreateLog=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[AppCode]
+File=.\LFS.ent.apc
+Include=..\REF\functions.apc
+[Message]
+File=.\LFS.ent.mgf
+[Help]
+File=.\LFS.ent.qsf
+[Forms]
+File=.\LFS.fmf
+[Dictionary Types]
+Dict-Type=..\DICTS\LFS.dcf,Input,.\LFS.fmf

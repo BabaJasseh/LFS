@@ -1,0 +1,27 @@
+infix dictionary using "C:\USERS\USER\DOWNLOADS\LFS APPLICATION\LABOUR 22 12 2022 C\LABOUR\MASK\EXPORT\HH.DAT" {
+1 lines
+    long     hh1         1:   1-5   
+    byte     hh2         1:   6-7   
+    int      hh3         1:   8-10  
+    int      hh4         1:  11-13  
+    str      hh5a        1:  14-63  
+    long     hh5b_1      1:  64-72  
+    long     hh5b_2      1:  73-81  
+    long     hh5b_3      1:  82-90  
+    long     hh6         1:  91-98  
+    byte     hh7         1:  99-99  
+    byte     hh8         1: 100-100 
+    int      hh9         1: 101-104 
+    byte     hh10        1: 105-105 
+    byte     hh11        1: 106-107 
+    str      hh11x       1: 108-157 
+    int      hh12        1: 158-161 
+    int      hhsize      1: 162-164 
+    byte     xgps        1: 165-165 
+    double   lon         1: 166-178 
+    double   lat         1: 179-191 
+    long     alt         1: 192-196 
+    double   xstarthh    1: 197-208 
+    double   xendhh      1: 209-220 
+    byte     badclosedhh    1: 221-221 
+}

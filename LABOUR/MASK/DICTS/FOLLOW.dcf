@@ -1,0 +1,99 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=FOLLOW
+Name=FOLLOW_DICT
+RecordTypeStart=0
+RecordTypeLen=0
+Positions=Relative
+ZeroFill=Yes
+DecimalChar=Yes
+SecurityOptions=D4C0D454776CD9E5BDED213A7E65E12F9FF2270AE2E13DEE0EDA498D2CC4DCCC
+
+[Level]
+Label=FOLLOW questionnaire
+Name=FOLLOW_QUES
+
+[IdItems]
+
+[Item]
+Label=Cluster number
+Name=FCLUSTER
+Start=1
+Len=7
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Sequential sampled number of household
+Name=FNUMBER
+Start=8
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=PAGE1A
+Name=PAGE1A
+RecordTypeValue=''
+RecordLen=352
+
+[Item]
+Label=Household number from the listing
+Name=FHHNUM
+Start=10
+Len=4
+DataType=Numeric
+
+[Item]
+Label=Name of household head
+Name=FNAME
+Start=14
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Size of household
+Name=FSIZE
+Start=64
+Len=3
+DataType=Numeric
+
+[Item]
+Label=Place of lodging
+Name=FLODGING
+Start=67
+Len=250
+DataType=Alpha
+
+[Item]
+Label=Interviewer assigned to household
+Name=FINTCODE
+Start=317
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Longitude
+Name=FLONGITUDE
+Start=320
+Len=12
+DataType=Numeric
+Decimal=6
+DecimalChar=Yes
+
+[Item]
+Label=Latitude
+Name=FLATITUDE
+Start=332
+Len=12
+DataType=Numeric
+Decimal=6
+DecimalChar=Yes
+
+[Item]
+Label=Phone number
+Name=FPHONE
+Start=344
+Len=9
+DataType=Numeric

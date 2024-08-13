@@ -1,0 +1,16 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=EXPORT_123
+Name=EXPORT_123
+AppType=Batch
+[External Dictionaries]
+File=.\EXPORT.bch.wrk.dcf
+[AppCode]
+File=.\EXPORT.bch.apc
+[Message]
+File=.\EXPORT.bch.mgf
+[Order]
+File=.\EXPORT.ord
+[Dictionary Types]
+Dict-Type=..\DICTS\LFS.dcf,Input,.\EXPORT.ord
+Dict-Type=.\EXPORT.bch.wrk.dcf,Working

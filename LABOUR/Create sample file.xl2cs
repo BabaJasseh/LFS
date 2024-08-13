@@ -1,0 +1,24 @@
+﻿Excel=.\DOCUMENTS\LFS_Sample_HHs.xlsx
+InputDict=.\MASK\DICTS\SAMPLE.dcf
+OutputData=.\MASK\REF\sample.dat
+StartingRow=2
+CaseManagement=CreateNewFile
+RunOnlyIfNewer=No
+
+Mapping=SAMPLE1;@1;LFS_Sample_HHs
+Mapping=SAMPLE1.XCLUSTER;@9
+Mapping=XSUP;@43
+Mapping=XLGA;@3
+Mapping=XAREA;@7
+
+Mapping=SAMPLE2;@2;LFS_Sample_HHs (2)
+Mapping=SAMPLE2.XCLUSTER;@9
+Mapping=XNUMBER;@8
+Mapping=XHHNUM;@33
+Mapping=XNAME;@34
+Mapping=XSIZE;@38
+Mapping=XLODGING;@19
+Mapping=XINTCODE;@44
+Mapping=XLONGITUDE;@26
+Mapping=XLATITUDE;@25
+Mapping=XPHONE;@39
